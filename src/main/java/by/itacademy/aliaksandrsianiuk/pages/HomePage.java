@@ -24,7 +24,7 @@ public class HomePage extends BasePage {
     public void   clickLogin() {
         WebDriver webDriver=new ChromeDriver();
         webDriver.navigate().to(HOME_URL);
-        String Path="//*[@id=\"container\"]/div/div/header/div[2]/div/div[2]/div[3]/div[2]/div[1]/div[1]";
+        String Path="//*[@id=\"pt-login-2\"]/a/span";
         By by=By.xpath(Path);
         WebElement webElement=webDriver.findElement(by);
         webElement.click();
